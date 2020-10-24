@@ -17,13 +17,13 @@ class Queuetest : public Queue
         Queuetest() {};
         void runtests();
         void haspassed();
-        bool test1();
-        bool test2();
-        bool test3();
-        bool test4();
-        bool test5();
-        bool test6();
-        bool test7();
+        void test1();
+        void test2();
+        void test3();
+        void test4();
+        void test5();
+        void test6();
+        void test7();
 
 
 };
