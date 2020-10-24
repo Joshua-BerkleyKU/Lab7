@@ -1,4 +1,4 @@
-void queuetest::runtest()
+void Queuetest::runtest()
 {
     test1();
     haspassed();
@@ -6,7 +6,7 @@ void queuetest::runtest()
     haspassed();
 }
 
-void queuetest::haspassed()
+void Queuetest::haspassed()
 {
     if (failed == true)
     {
@@ -20,10 +20,10 @@ void queuetest::haspassed()
     
 }
 
-bool queuetest::test1()
+bool Queuetest::test1()
 {
     std::cout << "test 1 seeing if a new queue is emptey " << '\n';
-    queuetest t;
+    Queuetest t;
     bool temp = t.isEmpty();
     if (temp == true)
     {
@@ -37,10 +37,10 @@ bool queuetest::test1()
     return(failed)
 }
 
-bool queuetest::test2()
+bool Queuetest::test2()
 {
     std::cout << "test 2 adding things to a queue and the deleting the queue " << '\n';
-    queuetest t;
+    Queuetest t;
     t.enqueue(1);
     t.enqueue(2);
     t.enqueue(3);

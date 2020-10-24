@@ -1,3 +1,4 @@
+
 #ifndef QUEUETEST_H
 #define QUEUETEST_H
 
@@ -6,14 +7,14 @@
 #include "Queue.h"
 #include "Node.h"
 
-class queuetest : public Queue
+class Queuetest : public Queue
 {
 
 private:
     bool failed = false;
     
 public:
-    queuetest();
+    Queuetest();
     void runtests();
     void haspassed();
     bool test1();
