@@ -1,10 +1,10 @@
 QueueDemo: main.o Queue.o Queuetest.o
-	g++ -g -Wall -std=c++11 main.o Queue.o Queuetest.o -o QueueDemo
+	g++ -std=c++11 -g -Wall main.o Queue.o Queuetest.o -o QueueDemo
 
 main.o: main.cpp 
-	g++ -g -std=c++11 -c main.cpp
+	g++ -std=c++11 -g -Wall -c main.cpp
 
-Queuetest.o: Queuetest.h Queuetest.cpp
+Queuetest.o:  Queuetest.cpp
 	g++ -std=c++11 -g -Wall -c Queuetest.cpp
 
 clean:
