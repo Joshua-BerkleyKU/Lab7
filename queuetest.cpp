@@ -1,3 +1,5 @@
+#include "queuetest.h"
+
 void Queuetest::runtest()
 {
     test1();
