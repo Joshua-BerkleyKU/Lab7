@@ -4,7 +4,7 @@ QueueDemo: main.o Queue.o Queuetest.o
 main.o: main.cpp 
 	g++ -g -std=c++11 -c main.cpp
 
-Queuetest.o: Queuetest.cpp 
+Queuetest.o: 
 	g++ -g -std=c++11 -c Queuetest.cpp
 
 clean:
