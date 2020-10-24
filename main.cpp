@@ -12,7 +12,7 @@
 int main()
 {
 	Queue q;
-	queuetest qt;
+	Queuetest qt;
 	qt.runtests();
 	return(0);
 }

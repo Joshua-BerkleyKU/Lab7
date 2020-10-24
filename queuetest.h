@@ -14,7 +14,7 @@ private:
     bool failed = false;
     
 public:
-    Queuetest();
+    Queuetest() {};
     void runtests();
     void haspassed();
     bool test1();
