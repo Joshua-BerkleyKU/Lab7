@@ -1,11 +1,11 @@
-Run: main.o Queue.o Queuetest.o
-	g++ -std=c++11 -g -Wall main.o Queue.o Queuetest.o -o Run
+Run: main.o Queue.o queuetest.o
+	g++ -std=c++11 -g -Wall main.o Queue.o queuetest.o -o Run
 
-main.o: main.cpp 
+main.o: main.cpp Queuetest.h
 	g++ -std=c++11 -g -Wall -c main.cpp
 
-Queuetest.o: Queuetest.h Queuetest.cpp
-	g++ -std=c++11 -g -Wall -c Queuetest.cpp
+queuetest.o: queuetest.h queuetest.cpp
+	g++ -std=c++11 -g -Wall -c queuetest.cpp
 
 clean:
 	rm *.o Run
