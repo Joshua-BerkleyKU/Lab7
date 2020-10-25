@@ -1,0 +1,9 @@
+Joshua Berkley
+EECS 448
+Lab 7
+
+Bug 1: when you delete the queue and then make a new one the new queue is not empety.
+
+Bug 2: enqueue adds to the fornt of the queue not the back.
+
+somewhat bugs: both peekfront and dequeue don't work properly due to enqueue adding to the fornt
